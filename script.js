@@ -22,6 +22,9 @@ noBtn.onclick = () => {
 yesBtn.onclick = () => {
   music.currentTime = 0;
   music.play();
+  yesBtn.addEventListener("click", () => {
+  launchFireworks();
+});
 
   show("screen2");
   fireworks();
